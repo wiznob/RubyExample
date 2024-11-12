@@ -1,0 +1,155 @@
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2024-10-25 10:24:41.017306', '2024-10-25 10:24:41.017309') RETURNING "key"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateActors (20241025102430)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "actors" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "country" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20241025102430') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2024-10-25 11:37:55 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/3.1.0/gems/railties-7.2.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/3.1.0/gems/railties-7.2.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.0ms | GC: 0.0ms)
+Completed 200 OK in 16ms (Views: 5.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/actors" for 127.0.0.1 at 2024-10-25 12:02:06 +0100
+Started GET "/api/v1/actors" for 127.0.0.1 at 2024-10-25 12:02:06 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/actors"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/actors"):
+  
+Started POST "/api/v1/actors" for 127.0.0.1 at 2024-10-25 12:02:14 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/actors"):
+  
+Started POST "/api/v1/actors" for 127.0.0.1 at 2024-10-25 12:02:16 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/actors"):
+  
+Started POST "/api/v1/actors" for 127.0.0.1 at 2024-10-25 12:02:18 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/actors"):
+  
+Started POST "/api/v1/actors" for 127.0.0.1 at 2024-10-25 12:02:18 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/actors"):
+  
+Started POST "/api/v1/actors" for 127.0.0.1 at 2024-10-25 12:02:18 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/actors"):
+  
+Started POST "/api/v1/actors" for 127.0.0.1 at 2024-10-25 12:02:22 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/actors"):
+  
+Started POST "/api/v1/actors" for 127.0.0.1 at 2024-10-25 12:02:22 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/actors"):
+  
+Started POST "/api/v1/actors" for 127.0.0.1 at 2024-10-25 12:02:26 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/actors"):
+  
+Started POST "/api/v1/actors" for 127.0.0.1 at 2024-10-25 12:02:26 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/actors"):
+  
+Started GET "/api/v1/actors" for 127.0.0.1 at 2024-10-25 12:02:28 +0100
+Started GET "/api/v1/actors" for 127.0.0.1 at 2024-10-25 12:02:28 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/actors"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/actors"):
+  
+Started GET "/api/v1/actors" for 127.0.0.1 at 2024-10-25 12:02:29 +0100
+Started GET "/api/v1/actors" for 127.0.0.1 at 2024-10-25 12:02:29 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/actors"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/actors"):
+  
+Started POST "/api/v1/actors" for 127.0.0.1 at 2024-10-25 12:03:07 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/actors"):
+  
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2024-11-12 09:18:19 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/3.1.0/gems/railties-7.2.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/3.1.0/gems/railties-7.2.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 2.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/icon.png" for 127.0.0.1 at 2024-11-12 09:18:19 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/icon.png"):
+  
+Started GET "/actors" for 127.0.0.1 at 2024-11-12 09:20:47 +0000
+Started GET "/actors" for 127.0.0.1 at 2024-11-12 09:20:47 +0000
+Processing by ActorsController#index as HTML
+  [1m[36mActor Load (0.8ms)[0m  [1m[34mSELECT "actors".* FROM "actors"[0m
+  ↳ app/controllers/actors_controller.rb:8:in `index'
+Completed 200 OK in 19ms (Views: 1.4ms | ActiveRecord: 0.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Processing by ActorsController#index as HTML
+  [1m[36mActor Load (0.1ms)[0m  [1m[34mSELECT "actors".* FROM "actors"[0m
+  ↳ app/controllers/actors_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/actors" for 127.0.0.1 at 2024-11-12 09:21:29 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ActorsController#create as HTML
+  Parameters: {"name"=>"er", "country"=>"er", "actor"=>{"name"=>"er", "country"=>"er"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/actors_controller.rb:20:in `create'
+  [1m[36mActor Create (1.1ms)[0m  [1m[32mINSERT INTO "actors" ("name", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "er"], ["country", "er"], ["created_at", "2024-11-12 09:21:29.864168"], ["updated_at", "2024-11-12 09:21:29.864168"]]
+  ↳ app/controllers/actors_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/actors_controller.rb:20:in `create'
+Completed 201 Created in 16ms (Views: 0.6ms | ActiveRecord: 5.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/actors" for 127.0.0.1 at 2024-11-12 09:21:29 +0000
+Processing by ActorsController#index as HTML
+  [1m[36mActor Load (0.2ms)[0m  [1m[34mSELECT "actors".* FROM "actors"[0m
+  ↳ app/controllers/actors_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/actors" for 127.0.0.1 at 2024-11-12 09:21:29 +0000
+Processing by ActorsController#index as HTML
+  [1m[36mActor Load (0.1ms)[0m  [1m[34mSELECT "actors".* FROM "actors"[0m
+  ↳ app/controllers/actors_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started DELETE "/actors/1" for 127.0.0.1 at 2024-11-12 09:21:31 +0000
+Processing by ActorsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mActor Load (0.3ms)[0m  [1m[34mSELECT "actors".* FROM "actors" WHERE "actors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/actors_controller.rb:44:in `set_actor'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/actors_controller.rb:38:in `destroy'
+  [1m[36mActor Destroy (1.5ms)[0m  [1m[31mDELETE FROM "actors" WHERE "actors"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/actors_controller.rb:38:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/actors_controller.rb:38:in `destroy'
+Completed 204 No Content in 10ms (ActiveRecord: 1.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
